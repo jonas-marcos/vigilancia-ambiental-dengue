@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.jpg" alt="Logo da Vigilância Ambiental" class="logo">
+            <h1>Entre em Contato</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="situacao.html">Situação Atual</a></li>
+                    <li><a href="prevencao.html">Prevenção</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Fale com a gente:</h2>
+            <form action="enviar_formulario.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="informacoes">Informações</option>
+                        <option value="denuncia">Denúncia</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="button" onclick="document.getElementById('mensagemConfirmacao').style.display='block';">Enviar</button>
+            </form>
+            <div id="mensagemConfirmacao" class="mensagem-confirmacao" style="display:none;">
+                <h2>Resposta registrada, muito obrigado!</h2>
+                <p>Seu formulário foi enviado com sucesso.</p>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Portal da Vigilância Ambiental. Todos os direitos reservados.</p>
+            <div class="footer-info">
+                <p><strong>Contato:</strong> (12) 3456-7890 | contato@municipio.com.br</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/jonasmarcos.diasrocha.5?locale=pt_BR" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/jonas_marcos_dr/" target="_blank">Instagram</a>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>
